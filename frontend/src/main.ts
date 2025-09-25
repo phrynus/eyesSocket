@@ -8,10 +8,10 @@ import '~/style.scss'
 import { css } from '~/font/MapleMono-CN-Thin.ttf?subsets'
 // import { css } from '~/font/MapleMono-CN-Light.ttf?subsets'
 
-document.body.style.fontFamily = `"${css.family}"`
+document.body.style.fontFamily = `"${css.family}" , sans-serif`
+console.log(`"${css.family}" , sans-serif !important`)
+
 document.body.style.fontWeight = css.weight || 'normal'
-document.body.style.fontStyle = css.style || 'normal'
-document.body.style.fontSize = '14px'
 
 const app = createApp(App)
 
